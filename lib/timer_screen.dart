@@ -37,4 +37,10 @@ class _TimerScreenState extends State<TimerScreen> {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
+  }
 }
